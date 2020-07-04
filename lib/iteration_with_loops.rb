@@ -1,15 +1,19 @@
 def find_min_in_nested_arrays(src)
+  outer_results = []
   row_index = 0
-  minimum =[]
-  while row_index < src.count do
+  while row_index < spice_rack.count do
     element_index = 0
-    sorted = []
-    while element_index < src[row_index].count do
-      src[row_index][element_index].sort = sorted
-        shift.sorted = min_val
+    longest_string_element = ""
+    while element_index < spice_rack[row_index].count do
+
+      if spice_rack[row_index][element_index].length > longest_string_element.length
+        longest_string_element = spice_rack[row_index][element_index]
+      end
       element_index += 1
     end
-    minimum << min_val
+   
+    outer_results << longest_string_element
     row_index += 1
   end
-end
+   
+  outer_results 
